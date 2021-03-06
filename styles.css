@@ -215,6 +215,28 @@ header > h1 {
     font-weight: 300;
 }
 
+#author-section > h2 {
+    text-align: center;
+}
+
+#author-section > img {
+    width: 200px;
+    height: auto;
+    padding-top: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+#author-links {
+    list-style: none;
+}
+
+.media-icon {
+    width: 40px;
+    height: auto;
+}
+
+
 /*icons for the what to get from the book*/
 .grid-container .item-icon {
     color: #ed6524;
