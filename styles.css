@@ -27,6 +27,8 @@ header > h1 {
     font-size: 25px;
 }
 
+/*book promo section */
+
 #book-promo {
     margin-top: 65px;
     width: 100%;
@@ -128,6 +130,24 @@ header > h1 {
     height: auto;
 }
 
+#book-badge {
+    position: absolute;
+    right: 185px;
+    top: 135px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 110px;
+    background: #5cb377;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1;
+    font-weight: bold;
+}
+
 .book-container > a {
     color: #000;
     text-decoration: underline;
@@ -135,6 +155,8 @@ header > h1 {
     margin-left: 120px;
     font-size: 16px;
 }
+
+/*book content section */
 
 #book-content {
     width: 100%;
@@ -181,6 +203,8 @@ header > h1 {
     display: block;
 }
 
+/*package section */
+
 #package {
     width: 100%;
     height: 95vh;
@@ -214,7 +238,7 @@ header > h1 {
     line-height: 2;
 }
 
-#device-btn {
+.device-btn {
     padding: 16px 34px;
     border-radius: 30px;
     background-color: #ed7230;
@@ -223,12 +247,14 @@ header > h1 {
     margin-left: 820px;
 }
 
-#device-btn:hover,
+.device-btn:hover,
 .submit-btn:hover {
     background-color: #ed6524;
     color: white;
     transition: background-color 0.6s ease-in-out;
 }
+
+/*audience section*/
 
 #audience {
     width: 100%;
@@ -270,6 +296,8 @@ header > h1 {
     font-weight: 300;
     margin-bottom: -10px;
 }
+
+/*form section*/
 
 #form-section {
     background-color: #fafafa;
@@ -317,10 +345,12 @@ header > h1 {
     outline-color: #ed7230;
 }
 
+/*book reviews section*/
+
 #book-reviews {
     width: 100%;
-    height: 230vh;
-    margin-top: 100px;
+    height: 112vh;
+    padding: 4rem;
 }
 
 #book-reviews > h2 {
@@ -334,7 +364,66 @@ header > h1 {
     font-size: 20px;
     font-weight: 400;
     margin-top: -25px;
+    margin-bottom: 50px;
 }
+
+.grid-container-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    max-width: 1280px;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-container {
+    background-color: #f6f8fc;
+    width: 400px;
+    height: 200px;
+    padding: 1rem;
+}
+
+.person-review {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: -20px;
+    vertical-align: middle;
+}
+
+.review-quotes {
+    font-style: italic;
+    color: #4c527d;
+    font-weight: 300;
+}
+
+.review-btn {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 220px;
+
+}
+
+.quote {
+    width: 36px;
+    height: 36px;
+    background: #f5a782;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 0;
+}
+
+.icon-container {
+    overflow: visible;
+    margin-top: -30px;
+    text-align: center;
+}
+
+/*author section page*/
 
 #author-section {
     margin-top: 40px;
@@ -407,6 +496,7 @@ h4 {
 }
 
 /*list checkbox*/
+
 .fa-w-16 {
     display: inline-block;
     margin-bottom: -12px;
@@ -415,6 +505,7 @@ h4 {
 }
 
 /*icons for team*/
+
 .svg-inline--fa.fa-w-20.f2 {
     width: 1.60em;
     color: #7FCDB8;
@@ -422,6 +513,8 @@ h4 {
     margin-bottom: -60px;
     margin-left: 460px;
 }
+
+/*footer section*/
 
 footer {
     width: 100%;
