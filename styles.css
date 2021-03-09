@@ -273,9 +273,9 @@ header > h1 {
 }
 
 #audience > p {
-    width: 600px;
+    max-width: 600px;
     text-align: center;
-    margin-left: 400px;
+    margin: 0 auto;
     line-height: 1.5;
     font-size: 1.2rem;
     font-weight: 300;
