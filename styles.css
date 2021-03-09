@@ -430,6 +430,7 @@ header > h1 {
 /*author section page*/
 
 #author-section {
+    text-align: center;
     margin-top: 40px;
     background-color: #ed6524;
     color: white;
@@ -453,25 +454,22 @@ header > h1 {
 }
 
 #author-section > p {
+    margin: auto;
     color: white;
     margin-top: -25px;
-    margin-left: 340px;
     line-height: 1.5;
     margin-bottom: 40px;
     font-size: 16px;
     font-weight: 300;
-    width: 700px;
+    text-align: center;
+    max-width: 700px;
 }
 
 h4 {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.6rem;
     font-weight: 400;
-}
-
-#author-links {
-    margin-left: 640px;
-    margin-top: -15px;
+    margin-bottom: 10px;
 }
 
 #author-links > li {
@@ -480,7 +478,7 @@ h4 {
 }
 
 .media-icon {
-    width: 30px;
+    width: 2rem;
     height: auto;
 }
 
