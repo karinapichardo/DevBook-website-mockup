@@ -208,105 +208,54 @@ header > h1 {
 }
 
 /*package section first */
-
 #package {
+    height: 100vh;
+    width: 100%;
+}
+
+.package-heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: auto;
+}
+
+.img-container {
+    margin: 0 auto;
     display: block;
 }
 
-.package-container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.heading-package {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section-heading {
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #1c1e2e;
-    line-height: 1.2;
-    margin-top: 0;
-}
-
-.flex-split-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-
-    /*    styles being applied to the whole body tag */
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.first-content {
-    flex: 0 0 100%;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.image-package {
-    margin-bottom: 3rem;
-}
-
 #devbook-devices {
-    max-width: 100%;
-    height: auto;
-    width: 350px;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
-
-}
-
-.second-content {
-    margin-bottom: 3rem;
-    flex: 0 0 0 100%;
-    max-width: 100%;
-    position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.package-list-box {
-    text-align: center;
-    margin-bottom: 1.5rem;
+    max-width: 450px;
+    margin-left: 100px;
 }
 
 .package-list {
-    font-size: 1.125rem;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
-    display: inline-block;
-    padding-left: 0;
+    line-height: 2;
     list-style: none;
-    margin-top: 0;
-}
-
-
-#package > li {
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #4c527d;
 }
 
 .btn-container {
-    text-align: center;
+    margin-top: 30px;
 }
 
 .device-btn {
@@ -318,10 +267,10 @@ header > h1 {
     border: none;
     color: #fff;
     display: inline-block;
-    text-align: center;
     vertical-align: middle;
     user-select: none;
     font-size: 1rem;
+    text-align: center;
     line-height: 1.5;
 }
 
