@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -32,7 +33,6 @@ header > h1 {
 #book-promo {
     margin-top: 65px;
     width: 100%;
-    height: 90vh;
     display: block;
 }
 
@@ -160,15 +160,15 @@ header > h1 {
 
 #book-content {
     width: 100%;
-    height: 100vh;
     background-color: #fafafa;
 }
 
 #book-content > h2 {
     text-align: center;
-    padding: 80px;
     font-size: 2.5rem;
     font-weight: 500;
+    padding-bottom: 80px;
+    padding-top: 30px;
 }
 
 #book-content > p {
@@ -207,64 +207,134 @@ header > h1 {
     display: block;
 }
 
-/*package section */
+/*package section first */
 
 #package {
-    width: 100%;
-    height: 100vh;
+    display: block;
 }
 
-#package > h2 {
+.package-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading-package {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 400;
     text-align: center;
-    font-size: 2.8rem;
-    font-weight: 500;
+    margin-bottom: 3rem;
+    color: #1c1e2e;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.flex-split-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    /*    styles being applied to the whole body tag */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.first-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.image-package {
+    margin-bottom: 3rem;
 }
 
 #devbook-devices {
-    margin-top: 40px;
     max-width: 100%;
+    height: auto;
     width: 350px;
-    margin: 0 auto;
-    display: block;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+
+}
+
+.second-content {
+    margin-bottom: 3rem;
+    flex: 0 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.package-list-box {
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .package-list {
-    list-style: none;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 1.125rem;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
-    color: #4c527d;
-    margin-bottom: 45px;
-    flex-direction: column;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
 }
 
-.device-btn {
-    padding: 16px 34px;
-    border-radius: 30px;
-    background-color: #ed7230;
-    color: white;
-    font-size: 15px;
-    margin: 0 auto;
-    display: block;
-    max-width: 210px;
+
+#package > li {
+    margin-bottom: 1rem;
+}
+
+.btn-container {
     text-align: center;
 }
 
-.device-btn:hover,
-.submit-btn:hover {
+.device-btn {
     background-color: #ed6524;
-    color: white;
-    transition: background-color 0.6s ease-in-out;
+    font-weight: 600;
+    padding: 0.875rem 2.5rem;
+    transition: all 0.4s ease-in-out;
+    border-radius: 2rem;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-container > a {
+    text-decoration: none;
 }
 
 /*audience section*/
 
 #audience {
     width: 100%;
-    height: 100vh;
-    margin-bottom: -80px;
+    margin-bottom: 100px;
+    padding: 0.5rem;
 }
 
 #audience > h2 {
@@ -303,14 +373,25 @@ header > h1 {
 .audience-p {
     margin-top: -5px;
     font-weight: 300;
-    margin-bottom: -10px;
+}
+
+.item-icon {
+    font-size: 1.25rem;
+    margin-right: 1rem;
 }
 
 /*form section*/
 
 #form-section {
+    width: 100%;
+    margin-bottom: 60px;
+    height: 25vh;
+    display: block;
+}
+
+.form-container {
     background-color: #fafafa;
-    width: 650px;
+    max-width: 650px;
     height: 215px;
     margin: 0 auto;
     padding-top: 2px;
@@ -358,7 +439,6 @@ header > h1 {
 
 #book-reviews {
     width: 100%;
-    height: 112vh;
     padding: 4rem;
 }
 
@@ -412,8 +492,7 @@ header > h1 {
     text-align: center;
     margin: 0 auto;
     display: block;
-    width: 220px;
-
+    max-width: 245px;
 }
 
 .quote {
@@ -440,7 +519,7 @@ header > h1 {
     background-color: #ed6524;
     color: white;
     width: 100%;
-    height: 85vh;
+    padding: 0.5rem;
 }
 
 #author-section > img {
@@ -485,6 +564,7 @@ h4 {
 .media-icon {
     width: 2rem;
     height: auto;
+    margin-bottom: 15px;
 }
 
 
@@ -509,15 +589,22 @@ h4 {
     margin-bottom: -12px;
     width: 1em;
     color: #7FCDB8;
+    overflow: visible;
+    font-size: inherit;
+    vertical-align: -.125em;
 }
 
 /*icons for team*/
 
 .svg-inline--fa.fa-w-20.f2 {
-    width: 1.60em;
-    color: #7FCDB8;
     display: inline-block;
     margin-bottom: -60px;
+    width: 1.60em;
+    color: #7FCDB8;
+    overflow: visible;
+    font-size: inherit;
+    vertical-align: -.125em;
+    height: 1em;
 }
 
 /*footer section*/
@@ -533,14 +620,96 @@ footer > p {
     margin: 70px;
 }
 
-/* laptop responsive*/
 
-@media (min-width: 1370px) and (max-width: 1605px) {
-    #audience {
-        height: 125vh;
+@media (max-width: 460px) {
+    .promo-container {
+        width: 350px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .promo-container > h1 {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+
+
+    #book-review-quote {
+        margin-left: 0px;
+        width: 360px;
+        height: 140px;
+    }
+
+    #book-review-quote > p {
+        margin-right: 5px;
+    }
+
+    .mobile-photo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    #person-info {
+        display: block;
+        text-align: center;
+    }
+
+    .book-container {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    #book-badge {
+        right: 0;
+        top: 750px;
+    }
+
+    .book-container > a {
+        text-align: center;
+    }
+
+    #form-section {
+        width: 400px;
+    }
+
+    .submit-btn {
+        margin-top: 30px;
     }
 
     #package {
-        height: 130vh;
+        margin-bottom: -85px;
+    }
+
+    #book-reviews > p {
+        font-size: 1rem;
+    }
+
+    .review-container {
+        width: 24rem;
+    }
+
+    #audience {
+        margin-top: 20px;
+    }
+
+    #audience > h2,
+    #book-reviews > h2,
+    #author-section > h2 {
+        font-size: 2.2rem;
+    }
+
+    #audience > p {
+        margin-bottom: -50px;
+    }
+
+    footer {
+        height: 25vh;
+    }
+
+    footer > p {
+        font-size: 0.6rem;
     }
 }
