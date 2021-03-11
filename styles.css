@@ -29,31 +29,47 @@ header > h1 {
 }
 
 /*book promo section */
-
-#book-promo {
-    margin-top: 65px;
-    width: 100%;
-    display: block;
-}
-
-.promo-container {
-    width: 550px;
-    height: auto;
-    display: inline-block;
-    margin-left: 150px;
-}
-
-.promo-container > h1 {
+.promo-header {
     font-size: 2.6rem;
     font-weight: 400;
 }
 
+#book-cover {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+}
+
+.book-review-link {
+    margin-left: 145px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.profile-photo {
+    margin-left: 5px;
+    width: 55px;
+    height: auto;
+}
+
+#person-info {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.promo-container {
+    padding-left: 25px;
+    width: 550px;
+}
+
 .promo-container > p {
-    margin-top: -20px;
-    font-size: 19px;
+    font-size: 1.1rem;
     line-height: 1.5;
     font-weight: 300;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 #price-btn {
@@ -101,59 +117,6 @@ header > h1 {
     font-weight: 300;
     font-size: 15px;
     font-style: italic;
-}
-
-.profile-photo {
-    margin-left: 5px;
-    width: 55px;
-    height: auto;
-}
-
-#person-info {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 300;
-    margin-top: 5px;
-    vertical-align: middle;
-}
-
-.book-container {
-    display: inline-block;
-    width: 500px;
-    height: auto;
-    margin-left: 850px;
-    margin-top: -550px;
-}
-
-#book-cover {
-    width: 400px;
-    height: auto;
-}
-
-#book-badge {
-    position: absolute;
-    right: 185px;
-    top: 135px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-right: 25px;
-    padding-left: 25px;
-    height: 110px;
-    background: #5cb377;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1;
-    font-weight: bold;
-}
-
-.book-container > a {
-    color: #000;
-    text-decoration: underline;
-    text-align: center;
-    margin-left: 120px;
-    font-size: 16px;
 }
 
 /*book content section */
@@ -208,8 +171,8 @@ header > h1 {
 }
 
 /*package section first */
+
 #package {
-    height: 100vh;
     width: 100%;
 }
 
@@ -244,7 +207,6 @@ header > h1 {
 #devbook-devices {
     width: 100%;
     max-width: 450px;
-    margin-left: 100px;
 }
 
 .package-list {
@@ -255,7 +217,7 @@ header > h1 {
 }
 
 .btn-container {
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .device-btn {
@@ -567,98 +529,4 @@ footer > p {
     text-align: center;
     font-size: 15px;
     margin: 70px;
-}
-
-
-@media (max-width: 460px) {
-    .promo-container {
-        width: 350px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .promo-container > h1 {
-        font-size: 1.7rem;
-        font-weight: 400;
-    }
-
-
-    #book-review-quote {
-        margin-left: 0px;
-        width: 360px;
-        height: 140px;
-    }
-
-    #book-review-quote > p {
-        margin-right: 5px;
-    }
-
-    .mobile-photo {
-        margin: 0 auto;
-        display: block;
-    }
-
-    #person-info {
-        display: block;
-        text-align: center;
-    }
-
-    .book-container {
-        display: block;
-        width: 300px;
-        height: auto;
-        margin-left: 0px;
-        margin-top: 30px;
-    }
-
-    #book-badge {
-        right: 0;
-        top: 750px;
-    }
-
-    .book-container > a {
-        text-align: center;
-    }
-
-    #form-section {
-        width: 400px;
-    }
-
-    .submit-btn {
-        margin-top: 30px;
-    }
-
-    #package {
-        margin-bottom: -85px;
-    }
-
-    #book-reviews > p {
-        font-size: 1rem;
-    }
-
-    .review-container {
-        width: 24rem;
-    }
-
-    #audience {
-        margin-top: 20px;
-    }
-
-    #audience > h2,
-    #book-reviews > h2,
-    #author-section > h2 {
-        font-size: 2.2rem;
-    }
-
-    #audience > p {
-        margin-bottom: -50px;
-    }
-
-    footer {
-        height: 25vh;
-    }
-
-    footer > p {
-        font-size: 0.6rem;
-    }
 }
