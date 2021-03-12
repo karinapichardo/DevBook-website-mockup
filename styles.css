@@ -9,6 +9,11 @@ body {
     padding: 0;
 }
 
+#page-wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
 p {
     color: #4c527d;
 }
@@ -29,6 +34,11 @@ header > h1 {
 }
 
 /*book promo section */
+#book-promo {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .promo-header {
     font-size: 2.6rem;
     font-weight: 400;
@@ -36,7 +46,7 @@ header > h1 {
 
 #book-cover {
     max-width: 450px;
-    width: 100%;
+    /*    width: 100%;*/
     height: auto;
 }
 
@@ -124,6 +134,7 @@ header > h1 {
 #book-content {
     width: 100%;
     background-color: #fafafa;
+    height: auto;
 }
 
 #book-content > h2 {
@@ -382,7 +393,6 @@ header > h1 {
     background-color: #f6f8fc;
     width: 400px;
     height: 200px;
-    padding: 1rem;
 }
 
 .person-review {
@@ -509,7 +519,7 @@ h4 {
 
 .svg-inline--fa.fa-w-20.f2 {
     display: inline-block;
-    margin-bottom: -60px;
+    margin-bottom: -50px;
     width: 1.60em;
     color: #7FCDB8;
     overflow: visible;
@@ -529,4 +539,101 @@ footer > p {
     text-align: center;
     font-size: 15px;
     margin: 70px;
+}
+
+/*large desktops*/
+
+@media (max-width:1366px) {
+    #page-wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #book-promo {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1281px) {
+    #page-wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #book-promo {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+
+@media (max-width:1024px) {
+    footer {
+        height: 25vh;
+    }
+}
+
+/*mobile phones */
+@media (max-width: 768px) {
+    .promo-container > p {
+        font-size: 1.5rem;
+    }
+
+    #book-cover {
+        margin: auto;
+    }
+
+    #book-review-quote {
+        width: 550px;
+        height: 150px;
+    }
+
+    #book-review-quote > p,
+    #person-info,
+    .book-review-link,
+    .form-p,
+    .review-quotes {
+        font-size: 1.2rem;
+    }
+
+    #book-promo,
+    #book-content,
+    #audience,
+    #form-section,
+    #book-reviews,
+    #author-section,
+    footer {
+        width: 145%;
+    }
+
+    .grid-container,
+    #package {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .item-header,
+    .item-p,
+    .package-list > li,
+    .audience-heading,
+    .audience-p,
+    #author-section > p {
+        font-size: 1.3rem;
+    }
+
+    #package > .row-container {
+        flex-direction: column;
+    }
+
+    .grid-container-reviews > .review-container {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    .person-review,
+    footer > p {
+        font-size: 1rem;
+    }
 }
