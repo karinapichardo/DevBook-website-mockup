@@ -1,5 +1,5 @@
 # DevBook-website-mockup
-DevBook Landing Page
+### DevBook Landing Page
 
 Recreated a landing page designed by Xiaoying Riley, using only HTML5 and CSS3.
 
